@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <script defer  src="script.js"></script>
+  <title>Multi-Step-Form</title>
+</head>
+<body>
+  
+
+  <main>
+    <aside>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/bg-sidebar-desktop.svg">
+        <source media="(max-width: 767px)" srcset="images/bg-sidebar-mobile.svg">
+        <img src="">
+      </picture>
+      <div class="steps">
+
+          <div class="step">
+            <div class="circle active">1</div>
+            <div class="text">
+              <p class="sub-title">STEP1</p>
+              <p class="main-title">YOUR INFO</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="text">
+              <p class="sub-title">STEP2</p>
+              <p class="main-title">SELECT PLAN</p>
+            </div>
+          </div>
+
+
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="text">
+              <p class="sub-title">STEP3</p>
+              <p class="main-title">ADD-ONS</p>
+            </div>
+          </div>
+
+
+          <div class="step">
+            <div class="circle">4</div>
+            <div class="text">
+              <p class="sub-title">STEP4</p>
+              <p class="main-title">SUMMARY</p>
+            </div>
+          </div>
+
+
+
+      </div>
+    </aside>
+    <div class="content">
+
+      <div class="first show">
+        
+        <div class="text">
+          <h3>Personal info</h3>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+  
+        <ul class="list">
+  
+          <li>
+            <div class="input">
+              <label>Name</label>
+              <p class="warning name-warn"></p>
+            </div>
+            <input type="text" placeholder="e.g.Stephan King" class="name-in">
+          </li>
+  
+  
+          <li>
+            <div class="input">
+              <label>Email Address</label>
+              <p class="warning em-warn"></p>
+            </div>
+            <input type="email" placeholder="e.g. stephanking@lorem.com" class="em-in">
+          </li>
+  
+          <li>
+            <div class="input">
+              <label>Phone Number</label>
+              <p class="warning num-warn"></p>
+            </div>
+            <input type="number" placeholder="e.g. +1 234 567 890" class="num-in">
+          </li>
+  
+  
+  
+        </ul>
+  
+
+      </div>
+
+
+      <div class="second" style="display: none;">
+        <div class="text">
+          <h3>Select your plan</h3>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+        <div class="toggle">
+          <div class="toggle-box">
+            <p class="monthly">Monthly</p>
+            <div class="toggle-holder">
+              <div class="toggle-btn"></div>
+            </div>
+            <p class="yearly fade">Yearly</p>
+          </div>
+          <p class="plan-warning"></p>
+        </div>
+        <div class="plans">
+
+          <div class="box">
+            <img src="images/icon-arcade.svg" alt="">
+            <div>
+              <h4>Arcade</h4>
+              <p class="price">$ <span class="month-price">9</span> <span class="plan-date">/mo</span> </p>
+            </div>
+            <p class="free"></p>
+          </div>
+
+          <div class="box">
+            <img src="images/icon-advanced.svg" alt="">
+            <div>
+              <h4>Advanced</h4>
+              <p class="price">$ <span class="month-price">12</span> <span class="plan-date">/mo</span> </p>
+            </div>
+            <p class="free"></p>
+          </div>
+
+          <div class="box">
+            <img src="images/icon-pro.svg" alt="">
+            <div>
+              <h4>Pro</h4>
+              <p class="price">$ <span class="month-price">15</span> <span class="plan-date">/mo</span> </p>
+            </div>
+            <p class="free"></p>
+          </div>
+
+    
+
+        </div>
+
+ 
+      </div>
+
+
+      <div class="third" style="display: none;" >
+
+        <div class="text">
+          <h3>Pick add-ons</h3>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+
+        <div class="add">
+          <input type="checkbox" class="checks" />
+          <label></label>          
+          <div class="des">
+            <h3 class="main-title">Online Service</h3>
+            <p class="sub-title">Access to multiplayer games</p>
+          </div>
+            <p class="price">+$ <span class="add-price">1</span>  <span class="add-text">/mo</span>  </p>
+        </div>
+
+        <div class="add">
+          <input type="checkbox" class="checks" />
+          <label></label>
+            <div class="des">
+              <h3 class="main-title">Larger Storage</h3>
+              <p class="sub-title">Extra 1TB of cloud save</p>
+            </div>
+            <p class="price">+$ <span class="add-price">2</span>  <span class="add-text">/mo</span>  </p>
+        </div>
+
+
+        <div class="add">
+          <input type="checkbox" class="checks" />
+          <label ></label>
+          <div class="des">
+            <h3 class="main-title">Customizable Profile</h3>
+            <p class="sub-title">Custom theme on your profile</p>
+          </div>
+            <p class="price ">+$ <span class="add-price">2</span>  <span class="add-text">/mo</span>  </p>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="fourth" style="display: none;" >
+
+        <div class="text">
+          <h3>Finishing up</h3>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+
+        <div class="data">
+          <div class="package-head">
+              <div class="package">
+                <h4 class="package-name"></h4>
+              </div>
+              <div class="package-price">
+                <p>$ <span class="price pck-price"></span> </p>
+              </div>
+          </div>
+          <hr>
+          <div class="details">
+
+          
+
+              <div class="detail">
+              <p class="detail-text"></p>
+              <p> <span class="total-price"></span></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="confirm" style="display: none;" >
+        <img src="images/icon-thank-you.svg" alt="">
+        <div>
+          <h3>Thank you!</h3>
+          <p>Thank you!
+            Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@lorem.com.</p>
+        </div>
+      </div>
+
+
+    
+      <div class="control">
+        <p class="back">Go back</p>
+        <button class="next">Next step</button>
+      </div>
+    </div>
+  </main>
+
+
+
+
+</body>
+</html>
